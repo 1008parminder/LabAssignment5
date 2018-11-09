@@ -1,0 +1,8 @@
+.main-footer, .main-header{
+    background-color: #d0ff00;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    padding: 15px;
+    vertical-align: middle;
+    height: 100%
+  }

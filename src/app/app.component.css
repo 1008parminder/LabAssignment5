@@ -1,0 +1,23 @@
+.app-container-grid {
+    display: grid;
+    grid-template-rows: 4fr 3fr 4fr;
+    height: 100vh;
+  }
+  /* .main-header,
+  .main-footer {
+    background-color: #d0ff00;
+    display: grid;
+    grid-template-columns: 5fr 4fr 3fr;
+    padding: 15px;
+    vertical-align: middle;
+  } */
+  /* .main-container-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    padding: 15px;
+  } */
+  /* .align-center {
+    margin: 15px;
+    border: 1px dashed rgb(104, 104, 104);
+    text-align: center;
+  } */
