@@ -1,0 +1,56 @@
+<h3>Courses</h3>
+
+<div class="align-center">
+  <button (click)="addStudent()" mat-raised-button color="accent" class="align-right btn btn-default add-button">Add
+    Student</button>
+  <button (click)="saveStudent()" mat-raised-button color="accent" class="align-right btn btn-default add-button">Save</button>
+
+  <table class="table-one">
+    <thead>
+      <tr>
+        <td>ID:</td>
+        <td>First Name:</td>
+        <td>Last Name:</td>
+        <td>Courses:</td>
+        <td></td>
+      </tr>
+    </thead>
+    <tbody *ngIf="editMode == false">
+      <tr *ngFor="let student of students; let i = index">
+        <td>{{student.id}}</td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.course}}</td>
+        <td>
+          <button (click)="removeStudent(i)" mat-raised-button color="warn" class="align-right btn btn-default add-button">
+            <mat-icon>delete</mat-icon>
+          </button>
+
+        </td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="editMode == true">
+      <tr *ngFor="let student of students; let i = index">
+        <td>
+          <input [(ngModel)]="student.id" type="text" class="form-control" placeholder="ID" aria-describedby="basic-addon2">
+        </td>
+        <td>
+          <input [(ngModel)]="student.firstName" type="text" class="form-control" placeholder="First Name"
+            aria-describedby="basic-addon2">
+        </td>
+        <td>
+          <input [(ngModel)]="student.lastName" type="text" class="form-control" placeholder="Last Name"
+            aria-describedby="basic-addon2">
+        </td>
+        <td>
+          <input [(ngModel)]="student.course" type="text" class="form-control" placeholder="Course" aria-describedby="basic-addon2">
+        </td>
+        <td>
+            <button (click)="removeStudent(i)" mat-raised-button color="warn" class="align-right btn btn-default add-button">
+                <mat-icon>delete</mat-icon>
+              </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

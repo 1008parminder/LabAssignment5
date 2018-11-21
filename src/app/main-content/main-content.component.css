@@ -6,23 +6,6 @@
   height: 100%
   }
 
-  .table-one {
-    width: 100%;
-    border: 1px solid #CCC;
-  }
-  
-  .table-one>tbody>tr>td {
-    border: 1px solid #CCC;
-    min-height: 50px;
-    padding: .5em;
-  }
-  
-  .add-button {
-    font-size: bold;
-    float: right;
-    margin: 10px;
-  }
-  
-  .new-form {
-    background-color: rgb(234, 0, 255);
+  .router-outlet {
+    display:none;
   }
